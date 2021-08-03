@@ -16,11 +16,12 @@ choice=0
 
 echo
 echo
-echo -e "${BLUE}Welcome to...${NC} \n"
-toilet -f standard --filter border:gay "My Calculator"
+echo -e "${BLUE}Welcome to... \n"
+figlet "My Calculator"
+echo -e "${NC}"
 echo
 
-while [ $choice -le 4 ];
+while [ $choice -le 5 ];
 
 echo -e "What kind of calculation would you like to do? \n"
 

@@ -14,7 +14,7 @@ export hsh_pass=$(printf $usr_pass | sha256sum ) # export pushes the hash value 
 
 
 # Retreive the password from file and put it in a var
-sec_pass=$(grep -E -i '[0-9a-zA-Z -]{64}' secret.txt) 
+sec_pass=$(grep -E -i '[0-9a-zA-Z -]{64}' ~/student/scripts/portfolio/week2/secret.txt)
 
 
 # The comparison

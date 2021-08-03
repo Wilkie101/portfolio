@@ -4,8 +4,8 @@
 # Created Date Sat Jul 31 18:35:50 AEST 2021
 
 # start #
-
-file=$1
+echo
+read -p "What it the name of the file you would you like to check?" file
 
 OLDIFS=$IFS # TO REVERT AT END OF SCRIPT
 
@@ -26,7 +26,8 @@ else
     echo "$line I dont know what that is!"
 
 fi
-
+echo
+echo
 done
 IFS=$OLDIFS # TO REVERT IFS
 exit 1
