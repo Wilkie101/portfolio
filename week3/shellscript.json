@@ -15,13 +15,35 @@
 
 	"Add user read entry": {
 		"scope": "sh",
-		"prefix": "userread",
+		"prefix": "readuser",
 		"body": [
 			"read -p "prompt customer text here: " var",
 		],
 		"description": "Adds User Prompt"
 	}
 	
+	"Case Statement": {
+		"scope": "sh",
+		"prefix": "readuser",
+		"body": [
+			"case variable_name in
+			value1)
+			  STATEMENTS
+			  ;;
+			value2)
+			  STATEMENTS
+			  ;;
+		  	value3)
+			  STATEMENTS
+			  ;;
+		  	*)
+			  STATEMENTS
+			  ;;
+		  esac",
+		],
+		"description": "Adds correct syntax for case"
+	}
+
 	"Add Black": {
 		"scope": "sh",
 		"prefix": "black",
@@ -76,5 +98,51 @@
 		"description": "Removes Colour Formatting"
 	}
 	
+	"String Conditions": {
+		"scope": "sh",
+		"prefix": "conditions",
+		"body": [
+			"if [[ -z "$string" ]]; then # tests for an empty value in the string
+					echo "String is empty"
+		  elif [[ -n "$string" ]]; then # tests for a value in the string
+					echo "String is not empty"
+		  fi",
+		],
+		"description": "Testing String Values"
+	}
+
+	"Basic Loop": {
+		"scope": "sh",
+		"prefix": "loopbasic",
+		"body": [
+			"for value in /etc/rc.*; do
+			  echo $value
+			done",
+		],
+		"description": "Very Basic Loop"
+	}
+
+	"Read File": {
+		"scope": "sh",
+		"prefix": "readfile",
+		"body": [
+			"cat file.txt | while read line; do
+			  echo $line
+			done",			
+		],
+		"description": "Read File by line and print"
+	}
+
+	"C-Loop": {
+		"scope": "sh",
+		"prefix": "cloop",
+		"body": [
+			"for ((value = 0 ; value < 100 ; value++)); do
+			  echo $value
+			done",
+			],
+		"description": "C - Loop"
+	}
+
 
 }
