@@ -67,8 +67,7 @@ bash ~/student/scripts/portfolio/week2/setPassword.sh
 bash ~/student/scripts/portfolio/week3/calculator.sh
 ;;
 5)
-read -p "please enter two numbers"
-bash ~/student/scripts/portfolio/megafoldermaker.sh
+bash ~/student/scripts/portfolio/week3/megafoldermaker.sh
 ;;
 6)
 ./filenames.sh

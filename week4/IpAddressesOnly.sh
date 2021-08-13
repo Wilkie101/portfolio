@@ -13,8 +13,10 @@ ipinfo="$(./IpInfo.sh)"
 # use sed to remove additional lines
 # create a new var=echo old var | sed identifier with do not print
 ipadd=$(echo "$ipinfo" | sed -n '/IP Address:/{
-# sed replacement
+
+# sed replacement does not need to be extensive, a single character is enough
 s/IP Address/IP_Address/
+
 # print the changed text only
 p
 

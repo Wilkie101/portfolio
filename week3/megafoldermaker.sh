@@ -7,18 +7,15 @@
 
 
 #If there aren't two arguments to the script 
+read -p "Enter numbers one: " n1
 
-if (( $#!=2 )); then 
+read -p "Enter number two: " n2
 
-    #Print an error and exit 
 
-    echo "Error, provide two numbers" && exit 1 
-
-fi
 
 #For every number between the first argument and the last 
 
-for ((i = $1; i <= $2; i++)) 
+for (( i = $n1; i <= $n2; i++ )) 
 
 do
 
@@ -26,7 +23,7 @@ do
 
     echo "Creating directory number $i" 
 
-    mkdir "week $i" 
+    mkdir "week$i" 
 
 done
 
