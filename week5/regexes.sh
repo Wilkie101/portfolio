@@ -32,7 +32,7 @@ echo -e "         ${BLUE}4. Display the file names${NC} \n"
 echo -e "         ${RED}5. EXIT Program${NC}\n"
 read -p "         Please enter your selection: " ch
 
-# Case statement adds in the different options to alter the output.
+# This case statement adds in the different options to alter the output.
 case $ch in
 1) ch=r;;
 2) ch=ro;;
