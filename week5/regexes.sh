@@ -58,6 +58,7 @@ echo
 fi
 
 # while loop for the menu so it will keep prompting user until exited
+# resued the navigation menu, looking for how I will do nav for final project
 while [ "$menu" -le "7" ];
 
       echo -e "${CYAN}\n      What grep would you like to action?${NC} \n"
