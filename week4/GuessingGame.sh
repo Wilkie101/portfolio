@@ -15,38 +15,40 @@ YELLOW='\e[1;33m'
 NC='\e[1;0m'
 Goal=$( shuf -i 1-100 -n 1 )
 
-#This function prints a given error 
-      
-printError() 
-{ 
-    echo -e "\033[31mERROR:\033[0m $1" 
-} 
-      
- 
-      
-#This function will get a value between the 2nd and 3rd arguments 
-      
-getNumber() 
-  
-{ 
+#This function prints a given error
+
+printError()
+{
+    echo -e "\033[31mERROR:\033[0m $1"
+}
+
+
+
+#This function will get a value between the 2nd and 3rd arguments
+
+getNumber()
+
+{
     while [[ $REPLY -ne $Goal ]]; do
-    read -p "$1: " 
-    if [[ $REPLY -lt $2 || $REPLY -gt $3 ]];then
-        printError "Input must be a number between $2 and $3"
-            read -p "$1: " 
+	    read -p "$1: "
+
+	if [[ $REPLY -lt $2 || $REPLY -gt $3 ]];then
+        	printError "Input must be a number between $2 and $3"
+            	read -p "$1: "
 fi
+
     if [[ $REPLY -lt $Goal && $REPLY -gt $2 ]];then
-        echo -e "${BLUE}Number is low!${NC}" 
-        
+        echo -e "${BLUE}Number is low!${NC}"
+
     elif [[ $REPLY -gt $Goal && $REPLY -lt $3 ]];then
         echo -e "${YELLOW}Number is High!${NC}"
-          
+
     elif (( $REPLY == $Goal ));then
-        toilet -f smblock --filter border:gay "You are Correct!"
+        toilet -f smblock --filter border:gay "You are Right!"
         exit 0
 
     fi
-    
+
     done
 
 }
