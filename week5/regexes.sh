@@ -11,8 +11,6 @@ GREY='\e[1;30m'
 GREEN='\e[1;32m'
 RED='\e[1;31m'
 LTBLUE='\e[1;94m'
-PURPLE='\e[1;35m'
-CYAN='\e[1;36m'
 NC='\e[1;0m'
 # setting variables to 0
 menu=0
