@@ -8,7 +8,7 @@ passwordHash="8b7df143d91c716ecfa5fc1730022f6b421b05cedee8fd52b1fc65a96030ad52";
       
 #for each line in the file 
       
-for word in $(cat wordlist.txt); do
+for word in $(cat lg_word.txt); do
       
     #hash the word
       

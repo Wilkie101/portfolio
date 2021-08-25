@@ -1,0 +1,1 @@
+Type-Ransomware: Type-Malware: Type-Exploit: Type-Scam: Type-Vulnerability: Type-Compromise: Type-DDos: Sextortion: Malicious: Releases: Phone-Vector: SMS-Vector: Email-Vector: Software-Vector: Threat-Actors: Cyber-Criminal: Target-Business: Target-Health-Industry: Target-Individuals: Registered-CVE: 

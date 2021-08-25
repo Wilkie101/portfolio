@@ -1,0 +1,50 @@
+1) Microsoft Exchange ProxyShell Targeting in Australia
+3) Vulnerability Affecting BlackBerry QNX RTOS
+5) LockBit 2.0 ransomware incidents in Australia
+7) SonicWall devices targeted with ransomware utilising stolen credentials
+9) Kaseya VSA Supply-Chain Ransomware Attack
+11) ForgeRock Open AM critical vulnerability
+13) Cybercriminals targeting construction companies to conduct email scams 
+15) Microsoft Releases Security Updates for Microsoft Edge Browser
+17) Google Releases Security Updates for Chrome Browser
+19) Phone and email scammers impersonating the ACSC
+21) Critical vulnerability discovered in HTTP.SYS in Microsoft Windows
+23) Multiple high severity vulnerabilities discovered in the Exim mail server
+25) Avaddon Ransomware
+27) Potential exploitation of Click Studio’s PasswordState software
+29) Exploitation of Pulse Connect Secure Vulnerabilities
+31) Exchange server critical vulnerabilities
+33) APT exploitation of Fortinet Vulnerabilities
+35) Potential Accellion File Transfer Appliance compromise
+37) VMware vCenter Server plugin remote code execution vulnerability (CVE-2021-21972)
+39) Malware targeting Centreon software
+41) SonicWall Breach
+43) Potential SolarWinds Orion compromise
+45) SDBBot targeting health sector
+47) Sustained targeting of the health sector
+49) 2019-131a: Emotet malware campaign
+51) Netlogon elevation of privilege vulnerability (CVE-2020-1472) 
+53) Active exploitation of vulnerable MobileIron products
+55) Copy-paste compromises
+57) Phone scams impersonating Australian businesses and government agencies
+59) Ransomware targeting Australian aged care and healthcare sectors
+61) Increasing reports of myGov-related SMS and email scams targeting Australians
+63) Remote code execution vulnerability in Windows DNS (CVE-2020-1350)
+65) Critical vulnerability for SAP NetWeaver Application Server (CVE-2020-6287)
+67) TMUI remote code execution vulnerability - CVE-2020-5902
+69) DDoS threats being made against Australian organisations
+71) 2019-126: Vulnerable version of Telerik UI being actively exploited by APT actor
+73) COVID-19 malicious cyber activity
+75) Active exploitation of vulnerability in Microsoft Internet Information Services
+77) Summary of Tradecraft Trends for 2019-20
+79) Advanced Persistent Threat (APT) actors targeting Australian health sector organisations and COVID-19 essential services
+81) Sextortion email campaign impacting Australians
+83) 2020-003: Mailto ransomware incidents
+85) Processors can be exploited by Meltdown and Spectre vulnerabilities
+87) 2020-002: Critical vulnerabilities for Microsoft Windows
+89) Active exploitation of critical vulnerability in Citrix Application Delivery Controller and Citrix Gateway
+91) Australia Post SMS scam targeting Australians
+93) 2019-130: Password spray attacks
+95) ICS-CERT Alerts
+97) Sextortion campaign
+99) 2019-009: Securing unprotected network and data services
