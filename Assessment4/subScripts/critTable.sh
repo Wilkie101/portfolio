@@ -3,8 +3,8 @@
 # Author: David Wilkinson
 # Created Date Mon Aug 23 2021
 
-headline=~/student/scripts/portfolio/Assessment4/headline.txt
-alert=~/student/scripts/portfolio/Assessment4/alert.txt
+headline=~/student/scripts/portfolio/Assessment4/subScripts/headline.txt
+alert=~/student/scripts/portfolio/Assessment4/subScripts/alert.txt
 
 # START
 

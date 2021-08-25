@@ -3,8 +3,8 @@
 # Author: David Wilkinson
 # Created Date Mon Aug 23 2021
 
-heading=~/student/scripts/portfolio/Assessment4/heading.txt
-alert=alert.txt
+heading=~/student/scripts/portfolio/Assessment4/subScripts/heading.txt
+alert=~/student/scripts/portfolio/Assessment4/subScripts/alert.txt
 
 > "$alert"
 
@@ -14,7 +14,7 @@ printf '%s: ' Type-Ransomware >> "$alert"; grep -nci 'Ransomware' "$heading" >> 
 printf '%s: ' Type-Malware >> "$alert"; grep -nci 'Malware' "$heading" >> "$alert"
 printf '%s: ' Type-Exploit >> "$alert"; grep -nci 'Exploit' "$heading" >> "$alert"
 printf '%s: ' Type-Scam >> "$alert"; grep -nci 'Scam' "$heading" >> "$alert"
-printf '%s: ' Type-Vulnerability >> "$alert"; grep -nci 'Vulnerab' "$heading" >> "$alert"
+printf '%s: ' Type-Vulnerability >> "$alert"; grep -nci 'Vulnerabilit(y|ies)' "$heading" >> "$alert"
 printf '%s: ' Type-Compromise >> "$alert"; grep -nci 'Compromise' "$heading" >> "$alert"
 printf '%s: ' Type-DDos >> "$alert"; grep -nci 'DDos' "$heading" >> "$alert"
 printf '%s: ' Sextortion >> "$alert"; grep -nci 'Sextortion' "$heading" >> "$alert"
@@ -51,3 +51,12 @@ END {
 
 
 exit 0
+
+# GREP cheat sheet. staff.washington.edu
+# https://staff.washington.edu/weller/grep.html
+#
+# Gite, Vivek. (2021, June 03). Regular expressions in grep ( regex ) with examples. cyberciti.biz
+# https://www.cyberciti.biz/faq/grep-regular-expressions/ 
+#
+# Sathiyamoorthy. (2009, March 26). 15 Practical Grep Command Examples In Linux / UNIX. thegeekstuff.com
+# https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/

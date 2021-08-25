@@ -3,12 +3,9 @@
 # Author: David Wilkinson
 # Created Date Sat Aug 21 18:02:36 AEST 2021
 
-
 # start #
 
-
-
-# Defining all of the colours
+# Define all of the colours
 BLUE='\e[1;34m'
 GREY='\e[1;30m'
 GREEN='\e[1;32m'
@@ -16,35 +13,37 @@ RED='\e[1;31m'
 LTBLUE='\e[1;94m'
 NC='\e[1;0m'
 
-# setting variables to 0
+# sett variables to 0
 menu=0
 choice=0
 at=0
 gr_ch=0
 
+# Error Handling
+printError() {
+    echo -e "\033[31mERROR:\033[0m $1"
+}
 
-
-# run the shell passwordCheck with bash # (Shah et al., 2019)
+# run the shell passwordCheck
 bash ~/student/scripts/portfolio/week2/passwordCheck.sh
 
 # If statement using system variable $? for last process ie. passworCheck and the way it exited
-if [ $? = 1 ] # (Soni, 2021)
+if [ $? = 1 ]
 then
       echo "Exit stage left"
       exit 0
-else # (Buzdar, 2019)
-
+else 
+# fire the extract script to get the data
 bash ~/student/scripts/portfolio/Assessment4/subScripts/extract.sh
 
-echo -e "${BLUE}\n\nFor my Assessment 4 in Scripting Languages I have decided to scrape the Australian Cyber${NC} \n"
-echo -e "${BLUE}Security Center's (ACSC) Alert pages for information on recent Cyber Security threats ${NC} \n"
+echo -e "${BLUE}\n\nFor my Assessment 4 in Scripting Languages, I have decided to scrape the Australian Cyber${NC} \n"
+echo -e "${BLUE}Security Center's (ACSC) Alert pages for information on recent Cyber Security threats. ${NC} \n"
 echo -e "${BLUE}These threats are catagorised by Alert Type and Keyword. Please Enjoy...${NC} \n"
-echo -e "${BLUE}\n    WebScraper by David Wilkinson..${NC} \n"
+echo -e "${BLUE}\n    webScraper by David Wilkinson..${NC} \n"
 echo
 fi
-
-
-while [ "$menu" -le "7" ];
+# start the menu loop
+while [ "$menu" -le "8" ];
 
       echo -e "${CYAN}\n   What and how would you like to view your ACSC alerts?${NC} \n"
 
@@ -53,14 +52,18 @@ while [ "$menu" -le "7" ];
       echo -e "   ${BLUE}3. Read the headlines by Alert Type${NC} \n"
       echo -e "   ${BLUE}4. Count the alerts by Criticality${NC} \n"
       echo -e "   ${BLUE}5. Count Alerts by keyword${NC} \n"
-      echo -e "   ${BLUE}6. Set a Password${NC} \n"
-      echo -e "   ${BLUE}7. Exit${NC} \n"
-      read -p "   Select from 1-7: " menu
+      echo -e "   ${BLUE}6. Download a copy of alert page details to file${NC} \n"
+      echo -e "   ${BLUE}7. Set a Password${NC} \n"
+      echo -e "   ${BLUE}8. Exit${NC} \n"
+      read -p "   Select from 1-8: " menu
+    while (( "$menu" < "1" || "$menu" > "9" )); do
+            printError "  Entry must be a number between 1 and 8: "
+            read -p "         Please retry with a valid selection:" menu
+    done
 do
 
 # Case statement actions for the above menu
-# I added a level of complexity, i am not sure if i should have, I call a case statement
-# embedded in a function to provide further options to the query being run.
+# all actions of the case menu are calls to separate scripts
 case $menu in
 1) bash ~/student/scripts/portfolio/Assessment4/subScripts/showHeadline.sh;;
 
@@ -70,11 +73,13 @@ case $menu in
 
 4) bash ~/student/scripts/portfolio/Assessment4/subScripts/critTable.sh;;
 
-5) bash ~/student/scripts/portfolio/Assessment4/subScripts/wordCount.sh;;
+5) bash ~/student/scripts/portfolio/Assessment4/subScripts/wordTable.sh;;
 
-6) bash ~/student/scripts/portfolio/week2/setPassword.sh;;
+6) bash ~/student/scripts/portfolio/Assessment4/subScripts/curlAll.sh;;
 
-7) echo -e "${RED} \n Lucky number "7" Goodbye!!!! \n ${NC}"
+7) bash ~/student/scripts/portfolio/week2/setPassword.sh;;
+
+8) echo -e "${RED} \n Come back soon, Goodbye!!!! \n ${NC}"
 exit 0
 ;;
 esac

@@ -484,7 +484,7 @@ login</a></div>
 <div class="views-element-container block block-views block-views-blockview-all-content-banner-block-2" id="block-views-block-view-all-content-banner-block-2">
 	
 		
-			<div region="afternav"><div class="view view-view-all-content-banner view-id-view_all_content_banner view-display-id-block_2 js-view-dom-id-7afde5749a86e95bbb53c45a516b242dc2ece6fcf69c909ae0e720a9b9bae8ba">
+			<div region="afternav"><div class="view view-view-all-content-banner view-id-view_all_content_banner view-display-id-block_2 js-view-dom-id-ee583cb4369a94ff1bba80c16ae17602a0fd32044e8ad8255f7915b4d2f15f17">
 	
 		
 			
@@ -515,7 +515,7 @@ login</a></div>
 		<div data-drupal-messages-fallback class="hidden"></div><div id="block-cga-mainpagecontent" class="block block-system block-system-main-block">
 	
 		
-			<div class="views-element-container"><div class="view-all-content-exposed-operator view view-view-all-content view-id-view_all_content view-display-id-page_2 js-view-dom-id-4786b6622991fb502e1bd55d245075f6cb24a15c65d423b7c70a9921230a2364">
+			<div class="views-element-container"><div class="view-all-content-exposed-operator view view-view-all-content view-id-view_all_content view-display-id-page_2 js-view-dom-id-c4976275dde336b3c3ad4d3559c84fb5fbee8c571a0cd1aea9d7604703692cfb">
 	
 		
 			<div class="view-header">

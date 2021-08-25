@@ -1,0 +1,6 @@
+
+Very simply run the webScraper.sh
+
+Password is=1
+
+Very poor password strength I know but it is there to highlight it can be done.

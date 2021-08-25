@@ -1,0 +1,1424 @@
+
+Alert status
+HIGH
+
+
+Background / What has happened?
+
+The ACSC is tracking three vulnerabilities (CVE-2021-34473, CVE-2021-34523, CVE-2021-31207 known collectively as 
+ProxyShell) in Microsoft Exchange Servers that allow for unauthenticated remote code execution and arbitrary file 
+upload with elevated privileges.
+
+It is likely that threat actors will actively exploit these vulnerabilities against vulnerable Microsoft Exchange 
+Servers.
+
+CVE-2021-34473 provides a mechanism for pre-authentication remote code execution, enabling malicious actors to remotely 
+execute code on an affected system. 
+CVE-2021-34523 enables malicious actors to execute arbitrary code post-authentication on Microsoft Exchange servers due 
+to a flaw in the PowerShell service not properly validating access tokens.
+CVE-2021-31207 enables post-authentication malicious actors to execute arbitrary code in the context of SYSTEM and 
+write arbitrary files.
+
+
+Microsoft released patches to these vulnerabilities in April and May 2021.
+
+Additional information can be found in the Microsoft advisories:
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+ Background /What has happened?
+
+The ACSC is tracking a vulnerability in BlackBerry QNX RTOS on Australian networks.
+
+
+An integer overflow vulnerability exists in BlackBerry’s QNX products (including standard, medical and 
+safety-certified versions).  This vulnerability could allow remote code execution or denial-of-service attacks. This 
+is a high-risk vulnerability, affecting QNX SDP 6.5 SP1 and below (shipped in products manufactured between 1996 to 
+2012) and QNX for safety manufactured until 2018.
+
+Whether exploitation is possible depends on the presence of an external connection, and whether compensating controls 
+otherwise protect the device. Impact is implementation specific. The ACSC recommends users take defensive measures such 
+as those detailed in the Protecting Industrial Control Systems publication to minimize the risk of exploitation.
+
+BlackBerry has released a list of affected products. It is difficult to know what downstream products use QNX as 
+original equipment manufacturers (OEM) build and deploy QNX downstream. Since OEMs can modify the code, patches may be 
+specific to OEM products, rather than simply a generic QNX patch.
+
+View further information on this vulnerability.
+Mitigation / How do I stay secure? 
+
+
+
+**********************************************************************************
+
+Alert status
+MEDIUM
+
+
+Background /What has happened?
+
+The ACSC has received reporting from a number of Australian organisations that have been impacted by LockBit 2.0 
+ransomware. This activity has occurred across multiple industry sectors. Victims have received demands for ransom 
+payments. In addition to the encryption of data, victims have received threats that data stolen during the incidents 
+will be published.
+How do I stay secure?
+
+The ACSC has published information on the risks, impacts and preventative actions associated with ransomware on our 
+website.
+Assistance / Where can I go for help?
+
+The ACSC is monitoring the situation and is able to provide assistance and advice as required.
+
+Organisations that have been impacted or require assistance can contact the ACSC via 1300 CYBER1.
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+Background /What has happened?
+
+SonicWall, a network and cyber security appliance vendor, is reporting that ransomware activity is currently targeting 
+their Secure Mobile Access (SMA) 100 series comprised of SMA 200, 210, 400, 410 physical appliances and the SMA 500v 
+virtual appliance) and Secure Remote Access (SRA) products running unpatched and end-of-life 8.x firmware versions. 
+This ransomware activity is reported by SonicWall as abusing stolen credentials.
+
+The ACSC is aware of stolen credentials affecting Australian organisations that were likely the result of unpatched and 
+end-of-life SonicWall devices running 8.x firmware being exploited.
+
+The ACSC has previously issued an alert on a remote credential access vulnerability affecting SonicWall products.
+
+Update 29 July 2021
+
+This alert update clarifies that only end-of-life and selected unpatched devices are vulnerable to this activity.
+
+Mitigation / How do I stay secure? 
+
+Australian organisations should review their networks for the presence of affected SonicWall products which are 
+outlined in the security notice from SonicWall. If vulnerable products are identified, Australian organisations should 
+review and implement the recommended mitigations provided by SonicWall.
+
+Assistance / Where can I go for help?
+
+The ACSC is monitoring the situation and is able to provide assistance and advice as required. Organisations that have 
+been impacted or require assistance can contact the ACSC via 1300 CYBER1.
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+Background
+
+The ACSC has observed reporting that organisations globally have been impacted by the Kaseya VSA compromise and REvil 
+ransomware. 
+
+The ACSC has also received reporting from impacted Australian organisations. 
+
+The ACSC is aware that a vulnerability in the Kaseya VSA platform enabled the REvil group to distribute malware through 
+update mechanisms within Kaseya VSA with the intent of encrypting and ransoming data held on victim networks. For more 
+information, please refer to Kaseya’s notification. Early reporting of this issue suggested a Supply-Chain attack, 
+Kaseya advise that malicious actors exploited a critical vulnerability (CVE-2021-30116) in the platform to deploy 
+ransomware.
+Update and Mitigation
+
+On 12 July 2021, Kaseya released a patch which mitigates ongoing risk to organisations of compromise through this 
+activity. Please see Kaseya’s page for instructions on how to prepare you VSA server to safely apply this patch.
+Assistance
+
+The ACSC is monitoring the situation and is able to provide assistance and advice as required.
+
+Organisations that have been impacted or require assistance can contact the ACSC via 1300 CYBER1.
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+Background
+
+CVE-2021-35464 was disclosed on 23 June 2021 and targets ForgeRock OpenAM, an open-source access management solution. 
+The ACSC has identified a number of Australian organisations which have been compromised through exploitation of this 
+CVE.
+
+CVE-2021-35464 provides a mechanism for remote code execution, allowing malicious actors to remotely execute code on an 
+affected system. The ACSC has observed actors exploiting this vulnerability to compromise multiple hosts and deploy 
+additional malware and tools.
+
+Additional information is available from ForgeRock security advisory #202104.
+Mitigation
+
+The ACSC strongly recommends that Australian organisations urgently:
+
+Review their systems and networks for the presence of vulnerable instances of the OpenAM software; and
+Update to OpenAM version 7 or apply the workaround as identified by the ForgeRock Security Advisory #202104.
+
+
+
+**********************************************************************************
+
+Alert status
+MEDIUM
+
+
+
+The ACSC has observed a growing trend affecting construction companies and their customers. In the past six months 
+there has been an increase in cybercriminals targeting builders and construction companies to conduct business email 
+compromise (BEC) scams within Australia.
+
+In a BEC scam, cybercriminals will send fraudulent emails posing as a legitimate business. These emails typically 
+target the customers of the business and will ask them to change bank account details for future invoice payments. 
+Victims assume this request is legitimate and will then send invoice payments to a bank account operated by the scammer.
+
+These fraudulent emails may come from hacked email accounts, or cybercriminals might register domain names that are 
+similar to legitimate companies (typically by swapping letters or adding additional characters). At a quick glance, an 
+email address may look legitimate when it is actually being operated by a cybercriminal.
+
+Successful BECs may go unnoticed for weeks or months until the construction company follows up on missing payments.
+Mitigation
+
+All parties to construction projects should be vigilant when communicating by email, particularly when discussing bank 
+account details or invoicing.
+
+Other mitigation strategies include:
+
+Verify payment-related requests: If you receive a request to make a large transfer or to change bank account details, 
+you should verify that the request is legitimate before actioning it. Call the sender's established phone number or 
+visit them face-to-face before transferring any funds.
+Secure your email account: It is recommended that construction companies and related businesses use strong passphrases 
+and enable multi-factor authentication on their email accounts.
+
+
+**********************************************************************************
+
+Alert status
+LOW
+
+
+
+This update contains the following Microsoft Edge-specific update:
+
+CVE-2021-34506
+CVE-2021-34475
+
+
+The ACSC is highlighting this reporting to ensure Australian organisations are informed about the current global threat 
+environment, and are equipped to take proactive measures to improve your organisation’s cyber security posture. 
+
+ACSC encourages users and administrators to review the Release notes for Microsoft Edge Security Updates and apply 
+the necessary updates. We encourage any sightings to be reported to asd.assist@defence.gov.au
+Additional Advice for home users:
+
+To mitigate this threat, Microsoft Edge users can go to Settings &gt; About Microsoft Edge. If your browser version on 
+Linux, macOS and Windows is listed as version 91.0.864.59 no action is required. If not, manually check for updates 
+and restart the browser.
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+This update addresses vulnerabilities that an attacker could exploit to take control of an unpatched system. Google is 
+aware that exploits of CVE-2021-30551 and CVE-2021-30554 exist in the wild.
+
+The ACSC is highlighting this reporting to ensure Australian individuals and organisations are informed about the 
+current global threat environment, and are equipped to take proactive measures to improve your organisation’s cyber 
+security posture. 
+
+ACSC encourages users and administrators to review the Chrome Release Note and apply the necessary updates. ACSC 
+encourages partners to report any sightings to asd.assist@defence.gov.au
+Additional Advice for home users:
+
+To mitigate this threat, Chrome users can go to Settings &gt; Help &gt; About Google Chrome. If your browser version on 
+Linux, macOS and Windows is listed as 91.0.4472.114 or above you are safe. If not, manually check for updates and 
+restart the browser.
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+MEDIUM
+
+
+
+The ACSC is aware of phone calls and emails from scammers claiming to be ACSC employees or stating they are working in 
+collaboration with the ACSC. Scammers are calling from ‘spoofed’ Australian phone numbers, offering to resolve 
+malware issues or requesting assistance in the apprehension of cybercriminals.
+
+The scammers are requesting individuals download remote access applications such as ‘TeamViewer’ or ‘AnyDesk’ 
+giving the scammer access to the individual’s computer. The scammer will then persuade the individual into revealing 
+sensitive personal information by asking for copies of identity documents, or by suggesting the individual to log into 
+their bank account.
+
+Further to the calls, cybercriminals are masquerading as ACSC members in emails requesting recipients download 
+‘Antivirus’ software through a malicious link. If clicked on, the link downloads and installs malicious software to 
+the individual’s computer.
+
+Scammers may also request the purchase of cryptocurrencies or gift cards to ‘help stop the criminals’, requesting 
+secrecy, or threatening to arrest individuals who do not comply.
+
+If you have fallen victim to these phone calls or emails and paid money or exposed personal information, you can lodge 
+a cybercrime report for assessment by police at https://www.cyber.gov.au/report.
+
+If you require assistance you can contact the ACSC via 1300 CYBER1.
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+A high severity vulnerability has been discovered within the HTTP.SYS HTTP Protocol Stack within select versions of 
+Microsoft Windows. Successful exploitation of this vulnerability could enable a malicious cyber actor to take full 
+control of the vulnerable system. Additional details on the vulnerability and affected Microsoft Windows versions are 
+available from the Microsoft security advisory.
+
+At this time the ACSC has not identified any active exploitation of these vulnerabilities. However, due to widespread 
+use of Microsoft Windows within Australia, there would likely be a significant impact to Australian systems and 
+networks if exploitation is successful.
+Mitigation
+
+The ACSC strongly recommends that Australian organisations:
+
+Review their systems and networks for the presence of the affected Microsoft Windows desktop and server versions;
+Apply the appropriate patch as identified by the Microsoft security advisory.
+
+Assistance
+
+The ACSC is monitoring the situation and is able to provide assistance and advice as required. The ACSC will update 
+this alert as the situation changes if required. Organisations that have been impacted or require assistance can 
+contact the ACSC via 1300 CYBER1.
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+Multiple high severity vulnerabilities have been discovered within the Exim mail server. The most severe of these 
+vulnerabilities allows remote code execution which could enable a malicious cyber actor to take full control of the 
+vulnerable system. A full list of the vulnerabilities and additional information is available from the related Exim 
+security advisory.
+
+At this time the ACSC has not identified any active exploitation of these vulnerabilities. The ACSC has assessed that 
+there is a significant number of Exim mail servers deployed within Australia. Any future successful exploitation of 
+vulnerable Exim servers would have a significant impact to Australian systems and networks.
+Mitigation
+
+The ACSC strongly recommends that Australian organisations:
+
+Review their systems and networks for the presence of vulnerable instances of the Exim mail server;
+Apply the appropriate patch as identified by the Exim project in the Exim security advisory.
+
+Assistance
+
+The ACSC is monitoring the situation and is able to provide assistance and advice as required. The ACSC will update 
+this alert as the situation changes if required. Organisations that have been impacted or require assistance can 
+contact the ACSC via 1300 CYBER1.
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+The ACSC has seen a number of organisations that have been impacted by ransomware activity from the Avaddon group 
+within Australia. This targeting has occurred across multiple industry sectors. In addition to encryption of data, 
+victims are threatened with the publication of stolen data, as well as Distributed Denial of Service against their 
+network.
+
+The ACSC has provided analysis of the malware including detection methods, indicators of compromise and mitigations.
+Assistance
+
+The ACSC is monitoring the situation and is able to provide assistance and advice as required. Organisations that have 
+been impacted or require assistance can contact the ACSC via 1300 CYBER1.
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+Background
+
+The compromise of Click Studios’ software update process in April 2021 has resulted in some PasswordState users 
+downloading malware through the software update function. If executed, the malware leads to the compromise of the 
+customer’s PasswordState instance, giving the malicious actor access to all passwords stored in PasswordState, and 
+creates the opportunity for follow-on malicious activity.
+Additional Information
+
+The ACSC is providing advice and assistance to Click Studios as they respond to this incident. Click Studios has 
+produced publicly available incident management advisories for affected customers. Customers of Click Studios should 
+follow the steps detailed in these advisories to understand whether they are affected. Click Studios will continue to 
+update these advisories as required.
+Assistance
+
+The ACSC strongly recommends Australian organisations who have been affected by this compromise to report the incident 
+to the ACSC via ASD.Assist@defence.gov.au or 1300 CYBER 1. The ACSC continues to monitor the situation and is able to 
+provide assistance and advice as required.
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+Update
+
+On 20 April 2021, CISA released an alert on ongoing exploitation of Ivanti Pulse Connect Secure vulnerabilities. U.S. 
+Government agencies, critical infrastructure entities, and private sector organisations have been impacted. For further 
+details on the vulnerabilities and impacted versions please refer the Pulse Security Advisory.
+
+The Pulse VPN vulnerabilities were initially disclosed in April 2019 and have been previously exploited in Australian 
+networks. 
+Mitigation
+
+The ACSC recommends that in addition to patching, organisations should refer to mitigations provided within the CISA 
+alert, Alert AA21-110A: Exploitation of Pulse Connect Secure Vulnerabilities, and take the additional step to run the 
+Pulse Connect Secure Integrity Tool. The integrity tool checks the file system and finds any additional/modified 
+file(s).
+Assistance
+
+The ACSC is monitoring the situation and is able to provide assistance and advice as required. Organisations that have 
+been impacted or require assistance can contact the ACSC via 1300 CYBER1.
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+CRITICAL
+
+
+Update
+
+Critical – On 13 April 2021, Microsoft released security updates to mitigate significant, newly discovered 
+vulnerabilities in Microsoft Exchange 2013, 2016 and 2019.
+
+These vulnerabilities could be exploited by attackers to gain persistent access to Microsoft Exchange deployments. The 
+patches previously released by Microsoft in March 2021 do not remediate these new vulnerabilities and organisations 
+must apply Microsoft’s 13 April 2021 updates to prevent potential compromise.
+
+Additional details relating to the April 2021 patches are available here, whilst information regarding the March 2021 
+patches are available here.
+
+Microsoft provide their security update guide here, which collates all reports Microsoft receive affecting Microsoft 
+products and services including vulnerability details.
+
+Organisations should apply new patches as soon as possible and also undertake detection steps outlined in Microsoft 
+guidance. If organisations are unable to resource immediate investigation of potential compromise of their Microsoft 
+Exchange server, Microsoft has published a mitigation tool which organisations can use as a first step to protecting 
+servers. The ACSC also recommends that organisations implement web shell mitigation steps.
+Background
+
+The Australian Signals Directorate’s Australian Cyber Security Centre (ACSC) has identified extensive targeting, and 
+has confirmed compromises, of Australian organisations with vulnerable Microsoft Exchange deployments.  The ACSC is 
+assisting affected organisations with their incident response and remediation.
+
+The ACSC has identified a large number of Australian organisations are yet to patch vulnerable versions of Microsoft 
+Exchange, leaving them vulnerable to compromise. The ACSC urges these organisations to do so urgently.
+
+The ACSC is aware of reports that cybercriminals may be exploiting Microsoft Exchange vulnerabilities to deploy 
+ransomware in overseas organisations. Australian organisations who have not patched are at risk of cybercriminals 
+attempting to deploy ransomware on their networks through these vulnerabilities. Australian organisations should also 
+investigate for web shells and indicators of compromise on their Microsoft Exchange servers. 
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+Background
+
+The Australian Signals Directorate’s Australian Cyber Security Centre (ACSC) advises organisations using Fortinet 
+devices that Advanced Persistent Actors (APT’s) have been observed exploiting the following vulnerabilities:
+
+CVE-2018-13379 - Fortinet Path Traversal
+CVE-2020-12812 - Fortinet 2 Factor Authentication bypass
+CVE-2019-5591 - Fortinet Man-in-the-middle by LDAP impersonation
+
+
+US Cybersecurity and Infrastructure Security (CISA) and the Federal Bureau of Investigation (FBI) have published a 
+joint advisory on this issue Joint CSA AA21-092A: APT Actors Exploit Vulnerabilities to Gain Initial Access for Future 
+Attacks (ic3.gov). This advisory highlights that APT’s have been observed to leverage these vulnerabilities to 
+specifically enable the theft, encryption and destruction of data on vulnerable networks.
+Mitigations
+
+The primary mitigation against these attacks is to patch the vulnerabilities listed above. If patching is not 
+immediately possible, organisations should consider removing internet access from Fortinet devices until other 
+mitigations listed in the CISA joint advisory can be implemented.
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+Background
+
+Since 12 January 2021, the ACSC has been working with cyber security partners to assist Australian organisations in 
+relation to an SQL injection vulnerability in the Accellion File Transfer Appliance (FTA).  If exploited, this 
+vulnerability may provide an attacker with access to content stored on, and accessible by, the FTA instance.
+Mitigations
+
+If your organisation is impacted by the Accellion FTA vulnerability, the ACSC’s recommendations are:
+
+
+
+Temporarily isolate or block internet access to and from systems hosting the FTA.
+
+
+
+Review the joint United States, United Kingdom, Australia, New Zealand and Singapore advisory available at CISA and 
+examine the FTA using the included indicators of compromise.
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+If successfully exploited, CVE-2021-21972 would allow an adversary with access to port 443 to remotely execute commands 
+with unrestricted privileges on the underlying operating system hosting VMware vCenter Server. VMware evaluates the 
+severity of this issue to be Critical in their severity range. Proof of concept code to exploit the vulnerability has 
+been published online.
+
+The ACSC strongly encourages users and administrators to review the VMware advisory for CVE-2021-21972 (VMSA-2021-0002) 
+and update their systems promptly. The ACSC recommends that enterprises should restrict the exposure of management 
+interfaces internally and externally to their enterprise.
+
+Further information about CVE-2021-21972 is available on VMware’s website.
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+On 16 Feb 2021, France’s cyber security agency, Agence Nationale de la Sécurité des Systèmes d'Information 
+(ANSSI), released information relating to ongoing malware targeting Centreon software since 2017. Centreon produce 
+software for system and network monitoring, which is also named Centreon. ANSSI states that on compromise, two webshell 
+variants, P.A.S and Exaramel, were uploaded.
+
+ANSSI have provided analysis of the malware including detection methods and Indicators of Compromise
+Mitigation
+
+The ACSC recommends Australian organisations utilising Centreon follow advice provided by ANSSI and apply any updates 
+or patches that are released.  Until updates or patches are released, the ACSC recommends that Centreon software 
+management console be isolated from the internet and internal network connections be minimised.
+Assistance
+
+The ACSC is monitoring the situation and is able to provide assistance and advice as required. Organisations that have 
+been impacted or require assistance can contact the ACSC via 1300 CYBER1.
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+Update
+
+SonicWall has released a patch for the now confirmed vulnerability within the SMA 100 series 10.x code. SMA 100 
+firmware prior to 10.x is unaffected by this vulnerability. 
+
+For information on the patch, affected devices and recommended mitigation advice, please refer to SonicWall product 
+notification.
+Background
+
+On 22 January 2021, cyber security vendor SonicWall identified an internal systems breach using a likely zero-day in 
+the SonicWall NetExender VPN client and Secure Mobile Access (SMA) products. On 23 January 2021, SonicWall provided an 
+updated stating that only the SMA 100 Series is potentially vulnerable and customers may continue to use the 
+NetExtender component for remote access as it is not susceptible to exploitation.
+
+For information on the affected devices and recommended mitigation advice, please refer to SonicWall product 
+notification.
+Additional information and supporting tools
+
+The ACSC is monitoring the situation and will continue to advise Australian organisations as required. The ACSC 
+encourages all organisations to continually assess and apply the Essential Eight strategies to protect their systems. 
+Assistance
+
+Organisations that have been impacted or require assistance can contact the ACSC via 1300 CYBER1.
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+Background
+
+On 14 December 2020, the ACSC issued an initial alert regarding potential compromise of the SolarWinds Orion 
+software. This alert was informed by an announcement from cyber security company FireEye, who were monitoring a global 
+intrusion campaign linked to compromise of the SolarWinds Orion software supply chain. 
+Update
+
+As of 25 January 2021, the ACSC has received a number of reports from Australian organisations notifying that they were 
+operating vulnerable versions of SolarWinds Orion. To date, no follow-on compromise of an Australian organisation 
+through SolarWinds Orion has been identified.
+
+The compromise of the supply chain meant that that organisations that were running SolarWinds Orion may have 
+inadvertently installed malicious additions through normal update processes. The malicious software (malware) 
+associated with the supply chain compromise is being referred to as SUNBURST. 
+
+Following the identification of SUNBURST, additional malware associated with the SolarWinds Orion supply chain 
+compromise has been identified. These are commonly being referred to as TEARDROP and RAINDROP and have been identified 
+during investigations of follow-on compromises of affected organisations. 
+
+During investigations of the supply chain compromise, additional malware targeting SolarWinds Orion was 
+identified. This second set of malicious software is being referred to as SUPERNOVA. The SUPERNOVA malware is not 
+believed to be related to the supply chain compromise, instead targeting an unrelated vulnerability in SolarWinds Orion.
+Mitigation
+
+SolarWinds have identified the vulnerabilities exploited by the compromise and issued patches for affected SolarWinds 
+Orion versions.
+
+Accordingly, ACSC’s recommendation for mitigating potentially vulnerable versions of SolarWinds Orion is to apply the 
+latest patches from SolarWinds as soon as possible. This recommendation applies to mitigate against both the SUNBURST 
+and SUPERNOVA malware.
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+The ACSC has observed increased targeting activity against the Australian health sector by actors using the SDBBot 
+Remote Access Tool (RAT).
+
+SDBBot is comprised of 3 components; an installer which establishes persistence, a loader which downloads additional 
+components, and the RAT itself. Once installed, malicious actors will use SDBBot to move laterally within a network and 
+exfiltrate data. SDBBot is a known precursor of the Clop ransomware.
+
+While the recently observed activity is targeting the health sector, the ACSC recommends that all network owners review 
+their controls against ransomware as per ACSC’s publication Ransomware in Australia.
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+The Australian Signals Directorate’s Australian Cyber Security Centre has identified a sustained campaign by 
+sophisticated cybercrime actors impacting the Australian health sector. We continue to see activity against the health 
+sector similar to the increase of identified Emotet activity in Advisory 2020-17: Resumption of Emotet malware campaign.
+
+This type of campaign is not limited to Australia, with the United States of America Cybersecurity and Infrastructure 
+Security Agency (CISA) recently issuing a cyber security alert. This alert identifies a campaign, with Emotet and 
+TrickBot being used to further deploy Conti or Ryuk ransomware variants. The alert also provides detection and 
+mitigation advice.
+
+While this campaign is targeted at the health sector, the ACSC recommends that all Australian organisations read the 
+two documents linked above and follow their recommended mitigation advice.
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+Emotet provides an attacker with a foothold in a network from which additional attacks can be performed, often leading 
+to further compromise through the deployment of ransomware.
+How it works
+
+The Emotet malware appears as a normal or useful file attachment in emails (.doc, .docx, .pdf), but includes hidden 
+code which allows cybercriminals to access and control your devices or computer systems. It can also appear as a 
+website hyperlink in emails.
+
+Emotet malware infects devices or computers if users click on links or open files in these emails, which are sent as 
+phishing emails to make them look like they come from someone you know, or an organisation you deal with.
+
+Once a user account is infected, the malware forwards itself to all the users’ email contacts, increasing the 
+likelihood of further infection.
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+Proof of concept code to exploit the vulnerability is now freely available online and has been integrated into common 
+exploit frameworks and tools.
+
+CVE-2020-1472 also affects several other products not previously covered by the advisory including, but not limited to:
+
+Samba implementations on Linux systems prior to v4.8. This includes all Linux distributions that utilise the official 
+Samba packages.
+
+
+In most cases, CVE-2020-1472 is a privilege escalation vulnerability. However, adversaries may be able exploit the 
+vulnerability for initial access if a Domain Controller is internet-exposed.
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+What to do
+
+The ACSC recommends that all Australian organisations patch all MobileIron devices under their control to the latest 
+version as soon as possible.
+Protect yourself
+
+The main vulnerability targeted is identified by Common Vulnerabilites and Exposure (CVE-2020-15505) and is addressed 
+by a patch released by the vendor.
+Further information
+
+Full details of affected versions and patches are available from MobileIron.
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+The Australian Government is aware of, and responding to, a sustained targeting of Australian governments and companies 
+by a sophisticated state-based actor. 
+
+The title ‘Copy-paste compromises’ is derived from the actor’s heavy use of proof-of-concept exploit code, web 
+shells and other tools copied almost identically from open source.
+
+The actor has been identified leveraging a number of initial access vectors, with the most prevalent being the 
+exploitation of public-facing infrastructure — primarily through the use of remote code execution vulnerabilities in 
+unpatched versions of Telerik UI. Other vulnerabilities in public-facing infrastructure leveraged by the actor include 
+exploitation of a deserialisation vulnerability in Microsoft Internet Information Services (IIS), a 2019 SharePoint 
+vulnerability and the 2019 Citrix vulnerability.
+
+The actor has shown the capability to quickly leverage public exploit proof-of-concepts to target networks of interest 
+and regularly conducts reconnaissance of target networks looking for vulnerable services, potentially maintaining a 
+list of public-facing services to quickly target following future vulnerability releases. The actor has also shown an 
+aptitude for identifying development, test and orphaned services that are not well known or maintained by victim 
+organisations.
+
+When the exploitation of public-facing infrastructure did not succeed, the ACSC has identified the actor utilising 
+various spearphishing techniques. This spearphishing has taken the form of:
+
+links to credential harvesting websites
+emails with links to malicious files, or with the malicious file directly attached
+links prompting users to grant Office 365 OAuth tokens to the actor
+use of email tracking services to identify the email opening and lure click-through events.
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+What’s happened?
+
+The Australian Cyber Security Centre and Australian Competition and Consumer Commission’s Scamwatch have received an 
+increased number of reports in the last five days of remote access scams.
+
+Members of the public have reported receiving calls from cybercriminals pretending to be from telecommunication 
+companies, government agencies including the Department of Home Affairs, and parcel delivery companies.
+
+A majority of the calls have been reported by people living in areas that have been locked down due to the COVID-19 
+pandemic, suggesting cybercriminals may be preying on people who are more vulnerable, housebound and easy to contact. 
+   
+
+Where victims have handed over personal details, the cybercriminals are then using legitimate remote access 
+applications, like Team Viewer or Zoho Assist, to gain access to people’s devices. They then log into your bank 
+account and online accounts, and steal your details for financial gain. 
+Does it affect me?
+
+Cybercriminals are cold calling people, so anyone can receive one of these calls, regardless of whether you have any 
+usual dealings with the business being impersonated.
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+CRITICAL
+
+
+
+The ACSC has just released new guidance on how to mitigate ransomware threats and recover from an incident. 
+
+This is a timely reminder that keeping software up to date and having current backups stored off-line is the best way 
+to protect you and your business from a ransomware attack.
+
+Healthcare is a particularly lucrative target for cybercriminals due to the value and quantity of personal data held. 
+
+If Australian organisations are infected, they should seek assistance in the first instance from the ACSC via 
+1300 CYBER1. We encourage reporting cyber security incidents to enable the ACSC to alert and assist a broader range of 
+organisations, and understand the scope and nature of cyber intrusions. 
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+The Australian Taxation Office (ATO) is receiving increased reports of several myGov-related SMS and email scams.
+
+At this time of year, when people expect some form of interaction with the ATO during tax time, be aware that 
+cybercriminals take advantage by pretending to be the ATO or myGov. These scams look like they’ve come from an ATO or 
+myGov email address and they ask you to click on a link to verify your details.
+
+
+
+To make them seem more legitimate, cybercriminals use technology that causes these messages to appear in the same 
+conversation thread as genuine messages from the ATO or myGov. The image is an example of this scam message.
+
+If clicked on, the hyperlink takes you to a fake website that asks you to provide your details and other personal 
+information for ‘verification purposes’. 
+
+As always our advice is DON’T click any links and DON’T provide the information requested.
+Does it affect me?
+
+These SMS and email scams are widely circulating around Australia, so anyone can receive them.
+
+ 
+
+
+**********************************************************************************
+
+Alert status
+CRITICAL
+
+
+
+The Australian Cyber Security Centre strongly recommends users apply the security patch to their Windows DNS servers to 
+prevent an adversary from exploiting this vulnerability.
+
+ 
+
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+CRITICAL
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+MEDIUM
+
+
+
+The Australian Signals Directorate’s Australian Cyber Security Centre (ACSC) advises users of F5’s enterprise and 
+data centre BIG-IP products to ensure their systems are promptly patched after the recent disclosure of new remote code 
+execution vulnerability.
+
+CVE-2020-5902 allows an actor with access to Traffic Management User Interface (TMUI) to execute arbitrary system 
+commands, create or delete files, disable services and/or execute arbitrary Java code.
+
+The ACSC strongly encourages users and administrators to review the F5 advisory for CVE-2020-5902 and update their 
+systems promptly.
+
+Further information about CVE-2020-5902 is available on F5’s website.
+
+To report a cybercrime, visit ReportCyber
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+The threats in question are delivered via email, and threaten the recipient with a sustained DoS attack unless a sum of 
+the Monero cryptocurrency is paid. The actors behind these threats claim to be the ‘Silence Hacking Crew', however 
+the ACSC is unable to verify this claim.
+
+The ACSC cannot positively verify the legitimacy of any threats made by the actor. However, the ACSC has received no 
+reports of the threats eventuating in DoS and is aware of a number of DoS threats made in the past against Australian 
+organisations that did not eventuate.
+
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+Details
+
+Telerik offers a variety of products which are used to provide functionality used by web pages. In some cases, Telerik 
+products may be installed as a third party component through other products, and as such, may be unknowingly in use.
+
+In 2017, a security vulnerability was published that affects some Telerik products which could allow a malicious cyber 
+actor to gain control over a server. This vulnerability is detailed in CVE-2017-9248, and similarly in CVE-2017-11317 
+and CVE-2017-11357. Vulnerable versions of Telerik are those published between 2007 and 2017.
+
+Telerik issued a patch for these vulnerabilities in 2017, however due to the nature of the software, the patches may 
+need to be manually applied.
+
+The tools to exploit this vulnerability have been publicly published and require only basic knowledge or skills to use 
+successfully. Any servers currently running a vulnerable version should be considered at risk and remediation steps 
+should be taken.
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+Opportunistic malicious actors are exploiting people’s concerns and desire for information about the COVID-19 
+pandemic by directing them towards websites designed to either install malicious software or steal personal 
+information. In the last few weeks, the Australian Cyber Security Centre (ACSC) has observed thousands of 
+COVID-19-related websites being registered. While the majority of these websites are legitimate, many are being created 
+by malicious cyber actors seeking to exploit Australians during this difficult time.
+
+The malicious COVID-19 websites are designed to look legitimate or impersonate well-known organisations, making it 
+difficult for individuals to detect. Cybercriminals use them to install computer viruses onto people’s devices, such 
+as banking Trojans or different variants of ransomware, in order to generate profit. In other cases, they seek to 
+harvest user credentials, such as personal identification, passwords and bank details, which are then used to gain 
+access to the user’s networks, devices or online financial accounts.  
+
+The ACSC, with assistance from our law enforcement and industry partners, is engaged in efforts to disrupt or prevent 
+these malicious COVID-19 themed cyber activities. Ongoing analysis of COVID-19 scams and phishing emails indicates the 
+majority of them are quite sophisticated, often impersonating trusted entities such as the Australian Government. The 
+methods used are constantly evolving, with malicious actors regularly adapting their tradecraft to circumvent attempts 
+to stop them.
+
+Those engaged in cybercrime activity are not constrained by geographic borders and their actions can have far-reaching 
+consequences. The ACSC is aware of reports that malicious actors based in Eastern and Western Europe, Asia and Africa 
+have been responsible for launching COVID-19 themed malicious cyber activity, including against Australians. 
+
+The ACSC strongly encourages organisations and individuals to remain vigilant against the threat of COVID-19 themed 
+scams, phishing emails and malicious websites.  
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+The Australian Signals Directorate’s Australian Cyber Security Centre (ACSC) notes that actors have attempted to use 
+this exploit against a number of federal and state government agencies.
+
+The ACSC is aware that sophisticated actors are actively exploiting a deserialisation vulnerability existing in all 
+versions of Microsoft’s Internet Information Services (IIS) using the .NET framework (.NET). The vulnerability 
+exploits the service’s VIEWSTATE parameter to allow for remote code execution by unauthorised users.
+
+For actors to successfully exploit this vulnerability, they need to craft a VIEWSTATE parameter with malicious content. 
+On up-to-date installs of .NET on IIS, the contents of this parameter are protected by Message Authentication Code 
+(MAC) validation and an actor must obtain the IIS server Machine Key to exploit this vulnerability.
+
+The ACSC has observed active targeting of organisations that have been previously compromised, implying that 
+configuration files and associated keys may have been exfiltrated while the actor was present on systems running IIS.
+
+The ACSC has also observed active targeting of organisations running other vulnerable software components, such as 
+Telerik, that can also provide access to the required key material to perform decryption. For more information on this 
+malicious use of Telerik, please refer to ACSC Advisory 2020-004: Targeting of Telerik CVE-2019-18935 and ACSC Advisory 
+2019-126: Vulnerable version of Telerik UI being actively exploited by APT actor.
+
+The ACSC has not observed the activity detailed in this advisory targeting Microsoft Exchange Servers, however, the 
+ACSC is aware of CVE-2020-0688 which would allow an actor to know the Machine Key for Microsoft Exchange Servers 
+without gaining access to the key on the server. It is important to note that patches outlined in Microsoft advisory 
+CVE-2020-0688 address the static Machine Key and do not mitigate the deserialisation vulnerability if the Machine Key 
+becomes known.
+
+This advisory provides indicators of the activity ACSC has observed and details proactive advice on detecting and 
+mitigating potential exploitation of this vulnerability.
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+MEDIUM
+
+
+
+This advisory provides a summary of notable tactics, techniques and procedures (TTPs) exploited by Advanced Persistent 
+Threats (APT) and cybercriminals identified during the ACSC’s investigations.
+
+These TTPs are summarised practically in the framework of tactics and techniques provided by MITRE ATT&amp;CK.
+
+This technical guidance is provided for IT security professionals at public and private sector organisations.
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+Overview
+
+As the outbreak of the virus continues to impact the health sectors of countries worldwide, APT groups may be seeking 
+information and intellectual property relating to vaccine development, treatments, research and responses to the 
+outbreak as this information is now of higher value and priority globally. Accordingly, Australia’s health or 
+research sectors could be at greater threat of being targeted, and potentially compromised, by malicious APT groups.
+
+Due to the increased pressure placed on the health sector to respond to the COVID-19 pandemic, it is critical that 
+health sector organisations ensure that their networks are protected from malicious cyber actors who may seek to 
+disrupt essential services or compromise business-critical systems.
+
+Sophisticated actors will often use the most efficient means available to target a victim’s network and, in the 
+current climate, APT groups may seek to maximise on the public desire for COVID-19 related information by generating 
+specific COVID-19 themed spear-phishing emails to attempt to compromise victims.
+
+Adversaries and cybercrime actors have been identified as responsible for compromising email servers of health sector 
+entities in Australia, which are then used to distribute COVID-19 phishing emails in an attempt to deploy malicious 
+software, including ransomware, or to gain access to other targeted organisations.
+
+Malicious actors view health sector entities as a lucrative target for ransomware attacks. This is because of the 
+sensitive personal and medical data they hold, and how critical this data is to maintaining operations and patient 
+care. A significant ransomware attack against a hospital network would have major impact.
+
+Sophisticated actors have also been seen undertaking brute force attacks using a trial-and-error method to guess login 
+credentials, and password spray attacks that attempt to access numerous accounts with a list of commonly-used 
+passwords. Attacks such as these often result in the theft of sensitive data, and underscore the importance of a strong 
+cyber security culture amongst employees. This includes adopting multi-factor authentication, strong password policies, 
+and regular reviews of network logs for signs of malicious activity.
+
+The exploitation of compromised Remote Desktop Protocol (RDP) credentials by malicious actors is also a significant 
+concern, particularly as RDP is widely used by medical clinics and doctors’ surgeries to access centralised patient 
+databases and other shared information repositories. Compromised RDP credentials can enable unauthorised access to 
+networks in a manner that enables the malicious actor’s digital footprint and identification to be obscured.
+
+Organisations should implement the recommendations in this advisory in order to mitigate the threat of this malicious 
+activity and harden their network against unauthorised access. The ACSC also recommends that organisations consider the 
+recent joint advice provided by the NCSC-UK and CISA-US:
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+The Australian Cyber Security Centre (ACSC) is warning Australians to be alert to the scam after receiving more than 
+1,900 reports of the emails since 9 April.
+
+The email scammers may also claim to have compromised a computer or other electronic device, and may include either a 
+full or partial password that the recipient has used in the past.
+
+Sextortion is a form of online blackmail where a perpetrator threatens to reveal intimate images of someone online, 
+often to their friends and family, unless they pay a ransom (commonly in cryptocurrency). Typically, the scammers have 
+no compromising information.
+
+The spam emails appear to have begun on 9 April, with most recipients receiving their messages on this or the following 
+day.  The name of the ‘sender’ was different in each instance of the email address, the ACSC has confirmed.
+
+While the ACSC has not received any reports of financial loss, Australians are urged to not make payments, to cease all 
+contact with the scammers, and delete the email.
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+At this time, the ACSC is unaware whether these incidents are indicative of a broader campaign.
+Details
+
+Currently, the ACSC has limited information about the initial intrusion vector for Mailto infections.
+
+There is some evidence that Mailto actors may have used phishing and password spray attacks, and then used compromised 
+accounts to send further phishing emails to the users address book to spread the malware.
+
+There is currently limited information from this compromise on how the malware is spread laterally across a network.
+
+The hash of the Mailto ransomware from this incident is available in the Indicators of Compromise section of this 
+advisory.
+
+The ACSC is continuing to monitor the situation and will update this advisory with any additional details.
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+Security researchers have developed methods involving speculative execution to read kernel memory from user space on a 
+variety of processors from a range of vendors produced in the last decade. These methods have been referred to as 
+Meltdown and Spectre.
+
+Meltdown is described as a vulnerability that allows a program to access the memory, and thus also the secrets, of 
+other programs and the operating system. Meltdown only impacts Intel chips.
+
+Spectre allows access to protected memory of other applications. Spectre impacts Intel, AMD and ARM chips, which 
+includes some mobile devices.
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+CRITICAL
+
+
+The vulnerabilities
+
+Tracked as CVE-2020-0601, CVE-2020-0609, CVE-2020-0610 and CVE-2020-0611, these vulnerabilities were announced along 
+with patches on 15 January 2020 (AEDT) as part of Microsoft's January 2020 security updates.
+CVE-2020-0601 – Important
+
+The certificate validation vulnerability exists in the way Windows CryptoAPI (Crypt32.dll) validates Elliptic Curve 
+Cryptography (ECC) certificates. It could allow an adversary to spoof a code-signing or TLS certificate and have it 
+appear as valid, in addition this vulnerability may allow remote code execution. This Microsoft security patch also 
+creates a new log event with event ID 1 in the Windows Application event log to record the attempted exploitation of 
+this vulnerability.
+CVE-2020-0609 and CVE-2020-0610 – Critical
+
+CVE-2020-0609 and CVE-2020-0610 both contain a remote code execution vulnerability which exists in Windows Remote 
+Desktop Gateway (RD Gateway) where an unauthenticated attacker can connect to the RD Gateway over RDP and send 
+specially crafted requests to the target system. This can allow a malicious actor to install software, modify/create 
+user accounts, or modify data on the RD Gateway.
+CVE-2020-0611 - Critical
+
+CVE-2020-0611 is a remote code execution vulnerability which exists in the Windows Remote Desktop Client. When a user 
+connects to a malicious server via RDP, an attacker could exploit this vulnerability and execute arbitrary code on the 
+connecting computer as the user. This can allow an adversary to install software, modify/create user accounts, or 
+modify data on a client's computer.
+Affected products and version
+CVE-2020-0601
+
+
+**********************************************************************************
+
+Alert status
+CRITICAL
+
+
+
+The vulnerability, known as CVE-2019-19781, was disclosed on 17 December 2019 and enables an unauthenticated adversary 
+to execute arbitrary code.
+
+Due to active exploitation of this vulnerability, organisations running the affected applications that did not 
+implement Citrix’s mitigations before 11 January 2020 should attempt to identify and remediate successful 
+exploitation of their Citrix servers. Advice is provided in the Detecting Compromise and Remediating Compromise 
+sections below.
+
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+Alert status
+HIGH
+
+
+What’s happened?
+
+
+These fake SMS messages may tell you that your parcel is ‘detained’, ‘you’ve missed a delivery’ or there’s 
+an ‘important update’ to your delivery – and include a link to click on for more details. As scammers use 
+technology that imitates a caller ID, these scam texts can even appear in the same conversation thread as a legitimate 
+Australia Post conversation.
+
+
+By clicking on the links in a scam message, you are usually taken to a fake Australia Post website to enter your 
+personal or financial details. Clicking on these links can also infect your device with malicious software (malware).
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+The password spray attacks target users on standard corporate external services such as webmail, remote desktop access, 
+Active Directory Federated Services (ADFS) or cloud based services such as Office 365. Depending on the credentials and 
+service, successful authentication can potentially lead to the actor gaining access to corporate emails, the corporate 
+directory, global address books, remote desktop services or administrative access.
+
+
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+An ICS-CERT Alert is intended to provide timely notification to critical infrastructure owners and operators concerning 
+threats or activity with the potential to impact critical infrastructure computing networks.
+
+View ICT-CERT Alerts
+
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+The ACSC, Office of the eSafety Commissioner and Scamwatch have received over 300 reports this week.
+
+This scam email may appear to originate from an individual’s own email address and threatens to release personal and 
+sensitive information unless the scammer is paid money. The email may also claim to have compromised a computer, router 
+or other electronic device and it can include a password which the recipient has used in the past.
+
+Sextortion is a form of online blackmail where a perpetrator threatens to reveal intimate images of someone online, 
+often to their friends and family, unless they pay a ransom (commonly in untraceable cryptocurrency). Typically, the 
+scammers have no compromising information.
+
+While the ACSC has not received any reports of financial loss, the centre would like to remind Australians to not make 
+payments and cease all contact with the scammers.
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+Alert status
+HIGH
+
+
+
+This exposure may lead to data contained in these services being compromised. The ACSC urges organisations to check 
+their externally facing internet services and ensure appropriate access controls and protections are in place.
+Details
+
+As part of the ACSC, the Australian Internet Security Initiative (AISI) operates as a public-private partnership where 
+Australian internet providers and other network owners voluntarily work with the ACSC to help protect their customers 
+and/or themselves from cyber security threats.
+
+The program helps to reduce malicious software (malware) infections and service vulnerabilities occurring on Australian 
+IP address ranges. Daily email reports are sent to internet providers identifying IP addresses on their networks 
+observed as being infected by malware or potentially vulnerable to exploitation. Internet providers are encouraged to 
+use the AISI data to identify and inform affected customers about their malware infection or service vulnerability. 
+This includes providing advice to customers on how they can remove the malware or secure the vulnerable service.
+
+Over recent weeks, the ACSC has received a number of reports about cyber security incidents that could have been 
+prevented if the affected party had signed up to the free AISI program and actioned the alert data it provides.
+
+The web-facing services reported through the AISI are often vulnerable because they have inadequate authentication and 
+access control processes in place. Malicious actors are known to exploit these types of vulnerable services in order to 
+commit further cyber attacks such as:
+
+Ransomware Theft and/or modification of data and intellectual property
+Business disruption
+Denial of Service attacks
+
+
+**********************************************************************************
