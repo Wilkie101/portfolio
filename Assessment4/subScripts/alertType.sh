@@ -29,8 +29,9 @@ echo -e "         ${BLUE}3. Medium Alerts${NC} \n"
 echo -e "         ${BLUE}4. Low Alerts${NC} \n"
 echo -e "         ${BLUE}5. Exit to main menu${NC}\n"
 read -p "         Select from 1 to 5: " at
+    # error manage incorrect input
+    while (( $((at)) != "$at" || "$at" < "1" || "$at" > "6" || "$at" == "0" )); do
 
-    while (( "$at" < "1" || "$at" > "6" )); do
             printError "  Entry must be a number between 1 and 5: "
             read -p "         Please retry with a valid selection:" at
     done

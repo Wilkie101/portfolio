@@ -1,20 +1,29 @@
 
-Alert status
-HIGH
+Background /What has happened?
+
+SonicWall, a network and cyber security appliance vendor, is reporting that ransomware activity is currently targeting their Secure Mobile Access (SMA) 100 series comprised of SMA 200, 210, 400, 410 physical appliances and the SMA 500v virtual appliance) and Secure Remote Access (SRA) products running unpatched and end-of-life 8.x firmware versions. This ransomware activity is reported by SonicWall as abusing stolen credentials.
+
+The ACSC is aware of stolen credentials affecting Australian organisations that were likely the result of unpatched and end-of-life SonicWall devices running 8.x firmware being exploited.
+
+The ACSC has previously issued an alert on a remote credential access vulnerability affecting SonicWall products.
+
+Update 29 July 2021
+
+This alert update clarifies that only end-of-life and selected unpatched devices are vulnerable to this activity.
+
+Mitigation / How do I stay secure? 
+
+Australian organisations should review their networks for the presence of affected SonicWall products which are outlined in the security notice from SonicWall. If vulnerable products are identified, Australian organisations should review and implement the recommended mitigations provided by SonicWall.
+
+Assistance / Where can I go for help?
+
+The ACSC is monitoring the situation and is able to provide assistance and advice as required. Organisations that have been impacted or require assistance can contact the ACSC via 1300 CYBER1.
+
+ 
 
 
 
-This exposure may lead to data contained in these services being compromised. The ACSC urges organisations to check their externally facing internet services and ensure appropriate access controls and protections are in place.
-Details
 
-As part of the ACSC, the Australian Internet Security Initiative (AISI) operates as a public-private partnership where Australian internet providers and other network owners voluntarily work with the ACSC to help protect their customers and/or themselves from cyber security threats.
 
-The program helps to reduce malicious software (malware) infections and service vulnerabilities occurring on Australian IP address ranges. Daily email reports are sent to internet providers identifying IP addresses on their networks observed as being infected by malware or potentially vulnerable to exploitation. Internet providers are encouraged to use the AISI data to identify and inform affected customers about their malware infection or service vulnerability. This includes providing advice to customers on how they can remove the malware or secure the vulnerable service.
+https://www.cyber.gov.au/acsc/view-all-content/alerts/sonicwall-devices-targeted-ransomware-utilising-stolen-credentials 
 
-Over recent weeks, the ACSC has received a number of reports about cyber security incidents that could have been prevented if the affected party had signed up to the free AISI program and actioned the alert data it provides.
-
-The web-facing services reported through the AISI are often vulnerable because they have inadequate authentication and access control processes in place. Malicious actors are known to exploit these types of vulnerable services in order to commit further cyber attacks such as:
-
-Ransomware Theft and/or modification of data and intellectual property
-Business disruption
-Denial of Service attacks

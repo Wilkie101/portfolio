@@ -1,5 +1,5 @@
 #!/bin/bash
-# Purpose: To scrape the ACSC alerts page, look at and analyse the data from there.
+# Purpose: This is the main script to scrape the ACSC alerts page, look at and analyse the data from there.
 # Author: David Wilkinson
 # Created Date Sat Aug 21 18:02:36 AEST 2021
 
@@ -30,7 +30,7 @@ bash ~/student/scripts/portfolio/week2/passwordCheck.sh
 # If statement using system variable $? for last process ie. passworCheck and the way it exited
 if [ $? = 1 ]
 then
-      echo "Exit stage left"
+      echo "You are not authorised, exiting program"
       exit 0
 else 
 # fire the extract script to get the data
@@ -48,15 +48,17 @@ while [ "$menu" -le "8" ];
       echo -e "${CYAN}\n   What and how would you like to view your ACSC alerts?${NC} \n"
 
       echo -e "   ${BLUE}1. Look at all headlines with Alert and Date, space for next page, Q to exit.${NC} \n"
-      echo -e "   ${BLUE}2. Look at an alert headlines by criticality${NC} \n"
-      echo -e "   ${BLUE}3. Read the headlines by Alert Type${NC} \n"
+      echo -e "   ${BLUE}2. Read alert headlines by criticality${NC} \n"
+      echo -e "   ${BLUE}3. Read headlines by threat KeyWord${NC} \n"
       echo -e "   ${BLUE}4. Count the alerts by Criticality${NC} \n"
       echo -e "   ${BLUE}5. Count Alerts by keyword${NC} \n"
-      echo -e "   ${BLUE}6. Download a copy of alert page details to file${NC} \n"
+      echo -e "   ${BLUE}6. Download a copy of alert page details to file, space for next page, Q to exit.${NC} \n"
       echo -e "   ${BLUE}7. Set a Password${NC} \n"
       echo -e "   ${BLUE}8. Exit${NC} \n"
       read -p "   Select from 1-8: " menu
-    while (( "$menu" < "1" || "$menu" > "9" )); do
+
+     # Error manage incorrect input 
+    while (( $((menu)) != "$menu" || "$menu" < "1" || "$menu" > "9" || "$menu" == "0" )); do
             printError "  Entry must be a number between 1 and 8: "
             read -p "         Please retry with a valid selection:" menu
     done

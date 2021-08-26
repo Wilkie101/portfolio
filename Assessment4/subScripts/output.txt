@@ -4,23 +4,18 @@
     <meta charset="utf-8" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123347334-1"></script>
 <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "UA-123347334-1", {"groups":"default","linker":{"domains":["cyberasd.govcms.gov.au","cyber.gov.au","www.cyber.gov.au","www.cyberasd.govcms.gov.au"]},"anonymize_ip":true,"page_path":location.pathname + location.search + location.hash,"link_attribution":true});gtag("config", "UA-123347334-1", {"custom_map":{"metric1":"good_feedback","metric2":"bad_feedback"}});gtag("event", "custom", {"good_feedback":0,"bad_feedback":0});gtag('config', 'UA-54970022-1', {'name': 'govcms'}); gtag('govcms.send', 'pageview', {'anonymizeIp': true})</script>
-<meta name="title" content="View all alerts | Cyber.gov.au" />
 <link rel="canonical" href="https://www.cyber.gov.au/acsc/view-all-content/alerts" />
-<meta name="Generator" content="Drupal 8 (http://drupal.org) + GovCMS (http://govcms.gov.au)" />
+<meta name="Generator" content="Drupal 9 (http://drupal.org) + GovCMS (http://govcms.gov.au)" />
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="/themes/custom/cga/favicon.ico" type="image/vnd.microsoft.icon" />
 
         <title>View all alerts | Cyber.gov.au</title>
-        <link rel="stylesheet" media="all" href="/sites/default/files/css/css_kBQCWD4CZ28bB0eQKdupwLlrI9j6t3-wriNtYy61JQo.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_hWsCTfh2ANXWJBYHONtjPO8RZiat5_8qIwyMt7nQqww.css" />
+        <link rel="stylesheet" media="all" href="/sites/default/files/css/css_CDb9kzHg26vUnaaISx5QLKc4KADVzBzBPWx4vKwDg6U.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_N0z4XSmKWIaiO6UlfCXyEMcUeqjSSDSmh4mrRcSzH0o.css" />
 
             
-<!--[if lte IE 8]>
-<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
-<![endif]-->
-
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
 
@@ -484,7 +479,7 @@ login</a></div>
 <div class="views-element-container block block-views block-views-blockview-all-content-banner-block-2" id="block-views-block-view-all-content-banner-block-2">
 	
 		
-			<div region="afternav"><div class="view view-view-all-content-banner view-id-view_all_content_banner view-display-id-block_2 js-view-dom-id-ee583cb4369a94ff1bba80c16ae17602a0fd32044e8ad8255f7915b4d2f15f17">
+			<div region="afternav"><div class="view view-view-all-content-banner view-id-view_all_content_banner view-display-id-block_2 js-view-dom-id-2063437f66264b76c1b6be0192b2d4a1f5697b052841cc6328904c3253535f57">
 	
 		
 			
@@ -515,7 +510,7 @@ login</a></div>
 		<div data-drupal-messages-fallback class="hidden"></div><div id="block-cga-mainpagecontent" class="block block-system block-system-main-block">
 	
 		
-			<div class="views-element-container"><div class="view-all-content-exposed-operator view view-view-all-content view-id-view_all_content view-display-id-page_2 js-view-dom-id-c4976275dde336b3c3ad4d3559c84fb5fbee8c571a0cd1aea9d7604703692cfb">
+			<div class="views-element-container"><div class="view-all-content-exposed-operator view view-view-all-content view-id-view_all_content view-display-id-page_2 js-view-dom-id-514e3395433f0ab172480aa45d86afc7ba68d25e1ab81b5addd7bd9d08cbb03f">
 	
 		
 			<div class="view-header">
@@ -544,28 +539,42 @@ login</a></div>
 		</div>
 				<div class="view-filters">
 			<form class="views-exposed-form" data-drupal-selector="views-exposed-form-view-all-content-page-2" action="/acsc/view-all-content/alerts" method="get" id="views-exposed-form-view-all-content-page-2" accept-charset="UTF-8">
-  <div class="js-form-item form-item js-form-type-select form-item-title-op js-form-item-title-op">
-      <label for="edit-title-op">Operator</label>
+  <fieldset data-drupal-selector="edit-title-wrapper" id="edit-title-wrapper" class="js-form-item form-item js-form-wrapper form-wrapper">
+      <legend>
+    <span class="fieldset-legend">Search title</span>
+  </legend>
+  <div class="fieldset-wrapper">
+            <div class="js-form-item form-item js-form-type-select form-item-title-op js-form-item-title-op form-no-label">
+      <label for="edit-title-op" class="visually-hidden">Operator</label>
         
 
 	<select data-drupal-selector="edit-title-op" id="edit-title-op" name="title_op" class="form-select"><option value="=" >Is equal to</option><option value="word"  selected="selected">Contains any word</option><option value="allwords" >Contains all words</option></select>	
         </div>
-<div class="js-form-item form-item js-form-type-textfield form-item-title js-form-item-title">
-      <label for="edit-title">Search title</label>
+<div class="js-form-item form-item js-form-type-textfield form-item-title js-form-item-title form-no-label">
         <input data-drupal-selector="edit-title" type="text" id="edit-title" name="title" value="" size="30" maxlength="128" class="form-text" data-drupal-states="{&quot;visible&quot;:[{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;=&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;!=&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;contains&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;word&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;allwords&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;starts&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;not_starts&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;ends&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;not_ends&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;not&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;shorterthan&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;longerthan&quot;}},{&quot;:input[name=\u0022title_op\u0022]&quot;:{&quot;value&quot;:&quot;regular_expression&quot;}}]}" />
 
         </div>
-<div class="js-form-item form-item js-form-type-select form-item-body-value-op js-form-item-body-value-op">
-      <label for="edit-body-value-op">Operator</label>
+
+          </div>
+</fieldset>
+<fieldset data-drupal-selector="edit-body-value-wrapper" id="edit-body-value-wrapper" class="js-form-item form-item js-form-wrapper form-wrapper">
+      <legend>
+    <span class="fieldset-legend">Search content</span>
+  </legend>
+  <div class="fieldset-wrapper">
+            <div class="js-form-item form-item js-form-type-select form-item-body-value-op js-form-item-body-value-op form-no-label">
+      <label for="edit-body-value-op" class="visually-hidden">Operator</label>
         
 
 	<select data-drupal-selector="edit-body-value-op" id="edit-body-value-op" name="body_value_op" class="form-select"><option value="word"  selected="selected">Contains any word</option><option value="allwords" >Contains all words</option></select>	
         </div>
-<div class="js-form-item form-item js-form-type-textfield form-item-body-value js-form-item-body-value">
-      <label for="edit-body-value">Search content</label>
+<div class="js-form-item form-item js-form-type-textfield form-item-body-value js-form-item-body-value form-no-label">
         <input data-drupal-selector="edit-body-value" type="text" id="edit-body-value" name="body_value" value="" size="30" maxlength="128" class="form-text" data-drupal-states="{&quot;visible&quot;:[{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;=&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;!=&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;contains&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;word&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;allwords&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;starts&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;not_starts&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;ends&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;not_ends&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;not&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;shorterthan&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;longerthan&quot;}},{&quot;:input[name=\u0022body_value_op\u0022]&quot;:{&quot;value&quot;:&quot;regular_expression&quot;}}]}" />
 
         </div>
+
+          </div>
+</fieldset>
 <div class="js-form-item form-item js-form-type-select form-item-sort-by js-form-item-sort-by">
       <label for="edit-sort-by">Sort by</label>
         
@@ -1062,7 +1071,7 @@ login</a></div>
 
 
 <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"acsc\/view-all-content\/alerts","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"account":"UA-123347334-1","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":2,"trackCrossDomains":["cyberasd.govcms.gov.au","cyber.gov.au","www.cyber.gov.au","www.cyberasd.govcms.gov.au"],"trackUrlFragments":true},"pathToTheme":"themes\/custom\/cga","ajaxTrustedUrl":{"\/acsc\/view-all-content\/alerts":true,"\/search":true},"chosen":{"selector":"select:visible","minimum_single":10,"minimum_multiple":10,"minimum_width":0,"use_relative_width":false,"options":{"disable_search":false,"disable_search_threshold":20,"allow_single_deselect":false,"search_contains":true,"placeholder_text_multiple":"Choose some options","placeholder_text_single":"Choose an option","no_results_text":"No results match","max_shown_results":null,"inherit_select_classes":true}},"user":{"uid":0,"permissionsHash":"ab01547512f91658a86e39454fe8b6f4a5a6614472e9f0677fca971b244ed7fe"}}</script>
-<script src="/sites/default/files/js/js_VPmdG1_Lt8eIdq4jD-eMaJTrNFXFmonhUv5BuYgub-o.js"></script>
+<script src="/sites/default/files/js/js_Q20yhZ2cIWu0hz5KrtoWF4mD1umM9v_WqSsahnQn8ww.js"></script>
 
     <script type="text/javascript">
 if (typeof jQueryLoader === 'function') { jQueryLoader(); }
@@ -1096,6 +1105,11 @@ $(document).ready(function () {
 
   if( $('.au-page-alerts--error').length ) {
      $('#eligible-message').detach();
+
+    var str =  $('.au-page-alerts--error').html();
+    if (str.indexOf("date is invalid") >= 0 || str.indexOf('must be on or before') >= 0) {
+       $('.au-page-alerts--error').html('<h3 class="visually-hidden">Error message</h3>The <strong><em class="placeholder">Date and time incident identified</em></strong> date is invalid.<br>Please enter the date and time of the incident, or leave blank if unknown.');
+    }
   }
 
   // Webform alert when emails do not match 

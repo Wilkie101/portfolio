@@ -14,7 +14,7 @@ printf '%s: ' Type-Ransomware >> "$alert"; grep -nci 'Ransomware' "$heading" >> 
 printf '%s: ' Type-Malware >> "$alert"; grep -nci 'Malware' "$heading" >> "$alert"
 printf '%s: ' Type-Exploit >> "$alert"; grep -nci 'Exploit' "$heading" >> "$alert"
 printf '%s: ' Type-Scam >> "$alert"; grep -nci 'Scam' "$heading" >> "$alert"
-printf '%s: ' Type-Vulnerability >> "$alert"; grep -nci 'Vulnerabilit(y|ies)' "$heading" >> "$alert"
+printf '%s: ' Type-Vulnerability >> "$alert"; grep -ciE 'Vulnerabilit(y|ies)' "$heading" >> "$alert"
 printf '%s: ' Type-Compromise >> "$alert"; grep -nci 'Compromise' "$heading" >> "$alert"
 printf '%s: ' Type-DDos >> "$alert"; grep -nci 'DDos' "$heading" >> "$alert"
 printf '%s: ' Sextortion >> "$alert"; grep -nci 'Sextortion' "$heading" >> "$alert"

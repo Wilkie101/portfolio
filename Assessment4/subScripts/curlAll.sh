@@ -49,6 +49,7 @@ for i in $(cat "$topurl"); do
     sed -i 's/<[^>]*>//g' "$page"
     perl -pi -e 's{\t+}{ }g' "$page"
     sed -i 's|^[[:blank:]]*||1' "$page"
+    echo -e "\n"$i" \n" >> "$page"
     fold -w 120 -s "$page" >> "$allpages"
     echo -e "\n\n**********************************************************************************" >> "$allpages"
 done

@@ -4,3 +4,27 @@ Very simply run the webScraper.sh
 Password is=1
 
 Very poor password strength I know but it is there to highlight it can be done.
+
+Main script:
+
+webScraper.sh
+
+subScripts called from the main:
+
+alertType.sh
+critTable.sh
+curlAll.sh
+extract.sh
+keyWordType.sh
+setPassword.sh
+showHeadline.sh
+urlCase.sh
+wordtable.sh
+
+For testing I manually reset the working test files as it proved functionality
+
+resettextfiles.sh
+
+
+I have included urlCase.sh as well, it is my failure, the script i could not get working, it would just take 
+time to do, which in the end i ran out of :).

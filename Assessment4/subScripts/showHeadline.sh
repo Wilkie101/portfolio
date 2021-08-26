@@ -15,7 +15,8 @@ url=~/student/scripts/portfolio/Assessment4/subScripts/url.txt
 sed 1,588d $output > "$headline"
 sed -i 355,519d "$headline"
 sed -i 's/<[^>]*>//g' "$headline"
-sed -i 354,363d "$headline" # (ManasChhabra2)
+sed -i 1,10d "$headline"
+sed -i 344,367d "$headline" # (ManasChhabra2)
 fold -w 120 -s "$headline" | less #(Bendig, 2011)
 
 #finish

@@ -1,4 +1,3 @@
-			
 			    
 
 19 Aug 2021 - Alert status: HIGH
@@ -340,14 +339,5 @@ Link to ICS-CERT alerts from the US Department of Homeland Security
 24 Jul 2019 - Alert status: HIGH
 Sextortion campaign
 The Australian Cyber Security Centre (ACSC) is aware of a sextortion scam email campaign targeting the Australian community.  
-
-
-    
-
-03 Jul 2019 - Alert status: HIGH
-2019-009: Securing unprotected network and data services
-The Australian Cyber Security Centre (ACSC), the cyber defensive component of the Australian Signals Directorate (ASD), has observed a large number of unprotected network and database/storage services hosted on Australian Internet Protocol (IP) address ranges.
- 
-
 
 

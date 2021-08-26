@@ -12,6 +12,7 @@ sed -i d url.txt
 sed -i d page.txt
 sed -i d allpage.txt
 sed -i d heading.txt
+sed -i d headline.txt
 
 echo "all files cleaned"
 
